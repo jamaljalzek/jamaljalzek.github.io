@@ -1,0 +1,99 @@
+*
+{
+  border-radius: 0.25em;
+  font-family: consolas;
+  font-size: 1em;
+  outline: none;
+}
+
+body
+{
+  background-color: #236AB9;
+  padding: 5em;
+}
+
+.accordionItemOuterHeader
+{
+	background-color: #091D34;
+  font-size: 1.5em;
+}
+
+.innerAccordion
+{
+  background-color: #609CE1;
+  padding: 2em;
+}
+
+.accordionItemInnerHeader
+{
+	background-color: #133863;
+	font-size: 1.25em;
+}
+
+.accordionItemOuterHeader, .accordionItemInnerHeader
+{
+  color: white;
+  cursor: pointer;
+	font-weight: bold;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  padding: 1em;
+}
+
+.accordionItemInnerHeader::before, .accordionItemOuterHeader::before
+{
+  content: "+ ";
+}
+
+.activeHeaderDisplayMinusInsteadOfPlus::before
+{
+  content: "- ";
+}
+
+.accordionItemBody
+{
+  background-color: #E1ECF9;
+  overflow: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.accordionItemOuterHeader, .innerAccordion, .accordionItemInnerHeader, .accordionItemBody, img, button
+{
+  border-top: medium lightgray solid;
+  border-left: medium lightgray solid;
+  border-bottom: medium gray solid;
+  border-right: medium gray solid;
+}
+
+.accordionItemOuterHeader:active, .accordionItemInnerHeader:active, input, textarea, button:active
+{
+  border-top: medium gray solid;
+  border-left: medium gray solid;
+  border-bottom: medium lightgray solid;
+  border-right: medium lightgray solid;
+}
+
+#portraitPhoto
+{
+  width: 200px;
+  height: 300px;
+  float: left;
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+.dashedLine
+{
+  border-top: thin dashed black;
+  border-bottom: 0px;
+}
+
+button
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
