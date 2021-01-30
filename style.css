@@ -14,7 +14,7 @@ body
 
 .accordionItemOuterHeader
 {
-	background-color: #091D34;
+  background-color: #091D34;
   font-size: 1.5em;
 }
 
@@ -26,15 +26,15 @@ body
 
 .accordionItemInnerHeader
 {
-	background-color: #133863;
-	font-size: 1.25em;
+  background-color: #133863;
+  font-size: 1.25em;
 }
 
 .accordionItemOuterHeader, .accordionItemInnerHeader
 {
   color: white;
   cursor: pointer;
-	font-weight: bold;
+  font-weight: bold;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   padding: 1em;
@@ -74,6 +74,16 @@ body
   border-left: medium gray solid;
   border-bottom: medium lightgray solid;
   border-right: medium lightgray solid;
+}
+
+.accordionItemOuterHeader:active
+{
+  background-color: #05111E;
+}
+
+.accordionItemInnerHeader:active
+{
+  background-color: #0F2C4D;
 }
 
 #portraitPhoto
